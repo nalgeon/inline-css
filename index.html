@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline CSS - Rapidly build modern websites without ever leaving your HTML</title>
+    <link rel="icon" type="image/png" href="anton.png">
+    <style>
+        html { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "PT Sans", "Open Sans", "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 100%; line-height: 1.4; background: white; color: black; -webkit-overflow-scrolling: touch; } body { margin: 1.2em; font-size: 1rem; } @media (min-width: 20rem) { body { font-size: calc(1rem + 0.00625 * (100vw - 20rem)); } } @media (min-width: 40rem) { body { font-size: 1.125rem; } } p { margin: 1em 0; } p:first-child { margin-top: 0; } p:last-child { margin-bottom: 0; } blockquote { margin: 0; } h1, h2, h3, h4, h5, h6 { margin: 1.25em 0 0; line-height: 1.2; } h1+p, h2+p, h3+p, h4+p, h5+p, h6+p { margin-top: 0.5em; } h1 { font-size: 2.5em; } h2 { font-size: 1.75em; } h3 { font-size: 1.25em; } h4 { font-size: 1.15em; } h5 { font-size: 1em; } h6 { margin-top: 1em; font-size: 1em; color: #aaaaaa; } a { color: #0064c1; } a:visited { color: #8d39d0; } a:hover, a:active { outline-width: 0; } a:hover { color: #f00000; } a abbr { font-size: 1em; } code, kbd, var, samp { font-family: Consolas, "Lucida Console", Monaco, monospace; font-style: normal; } pre { overflow-x: auto; font-size: 0.8em; } pre>code { display: inline-block; overflow-x: visible; box-sizing: border-box; min-width: 100%; } ::selection { background: rgba(0, 100, 193, 0.25); } @media (min-width: 30rem) { #example>div:nth-child(2) { display: inline-block; } }
+    </style>
+</head>
+
+<body>
+    <section style="max-width: 40em;">
+        <h1>Rapidly build modern websites without ever leaving your HTML.</h1>
+        <p style="
+            font-size: 1.5em;
+            color: rgb(107, 114, 128);">
+            An Inline CSS framework with literally zero footprint
+            that can be composed to build any design, directly in your markup.
+        </p>
+        <div>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" style="
+                    display: inline-block;
+                    margin-bottom: 1em;
+                    padding: 0.75em 1.5em;
+                    border-radius: 0.5em;
+                    background-color: #000;
+                    color: #fff;
+                    text-decoration: none;">
+                Get started
+            </a> &nbsp;
+            <span style="
+                    display: inline-block;
+                    margin-bottom: 1em;
+                    padding: 0.75em 1.5em;
+                    border: 1px solid rgb(229, 231, 235);
+                    border-radius: 0.5em;
+                    background-color: rgb(249, 250, 251);
+                    color: #000;
+                    text-decoration: none;">
+                no npm install needed!
+            </span>
+        </div>
+    </section>
+
+    <section id="example" style="
+        position: relative;
+        margin-top: 2em;
+        padding: 3em 1em;">
+        <div style="
+            display: inline-block;
+            max-width: 20em;
+            margin-right: 1em;
+            vertical-align: middle;
+            padding: 1.5em;
+            background-color: #fff;
+            border-radius: 0.5em;
+            box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        ">
+            <blockquote>
+                <div style="float: left; padding-right: 1em;">
+                    <img style="max-width: 5em; border-radius: 50%;" src="anton.png">
+                </div>
+                <p style="font-weight: 500;">
+                    “Inline CSS is the only framework
+                    that I’ve seen scale on large teams.
+                    It’s easy to customize, adapts to any design,
+                    and the build size is nonexistent.”
+                </p>
+                <p style="color: rgb(113, 113, 122)">
+                    <a style="text-decoration: none;" href="https://antonz.org">
+                        Anton Zhiyanov
+                    </a><br>
+                    The Website Maker
+                </p>
+            </blockquote>
+        </div>
+        <div
+            style="
+            vertical-align: middle;
+            margin-top: 1em;
+            padding: 1.5em;
+            background-color: #04293a;
+            color: #fff;
+            border-radius: 0.5em;
+            box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;">
+            <pre><code>
+&lt;div style="..."&gt;
+    &lt;div style="float: left; padding-right: 1em;"&gt;
+        &lt;img style="max-width: 5em; border-radius: 50%;" src="anton.png"&gt;
+    &lt;/div&gt;
+    &lt;blockquote&gt;
+        &lt;p style="font-weight: 500;"&gt;
+            “Inline CSS is the the only framework
+            that I’ve seen scale on large teams.
+            It’s easy to customize, adapts to any design,
+            and the build size is nonexistent.”
+        &lt;/p&gt;
+        &lt;p style="color: rgb(113, 113, 122)"&gt;
+            &lt;a style="text-decoration: none;" href="https://antonz.org"&gt;
+                Anton Zhiyanov
+            &lt;/a&gt;&lt;br&gt;
+            The Website Maker
+        &lt;/p&gt;
+    &lt;/blockquote&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+        <div
+            style="
+            position: absolute;
+            z-index: -1;
+            left: 0; top: 0; right: 0; bottom: 0;
+            transform: rotate(-2deg);
+            background-image: linear-gradient(to right bottom, rgb(34, 211, 238), rgb(14, 165, 233));
+            border-radius: 1em;
+            box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;">
+        </div>
+    </section>
+
+    <section style="
+        max-width: 40em;
+        margin: 8em auto;
+        text-align: center;">
+        <h2 style="margin-bottom: 0.5em;">
+            “Best practices” don’t actually work.
+        </h2>
+        <blockquote>
+            <p style="
+                font-size: 1.2em;
+                line-height: 1.5;
+                color: rgb(107, 114, 128);">
+                I’m not going to write a few thousand words about Inline CSS,
+                because the truth is you’re never going to believe me until
+                you actually try it. If you can suppress the urge to retch
+                long enough to give it a chance, I really think you’ll wonder how you ever worked
+                with CSS any other way.
+            </p>
+            <p>
+                <img style="max-width: 5em; border-radius: 50%;" src="anton.png">
+            </p>
+            <p>Anton Zhiyanov<br>
+                <span style="color: rgb(2, 132, 199);">Inline CSS Prophet</span>
+            </p>
+        </blockquote>
+    </section>
+
+    <section style="
+        max-width: 40em;
+        margin: 4em 0">
+        <h2>Build whatever you want, seriously.</h2>
+        <p style="
+                font-size: 1.2em;
+                line-height: 1.5;
+                color: rgb(107, 114, 128);">
+            Because Inline CSS is so low-level, it never encourages you
+            to design the same site twice. Even with the same color palette
+            and sizing scale, it’s easy to build the same component
+            with a completely different look in the next project.
+        </p>
+        <a style="
+            font-size: 1.2em;
+            text-decoration: none;
+            color: #ea580c;" href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+            Get started →
+        </a>
+    </section>
+
+    <section style="
+        max-width: 40em;
+        margin: 4em 0">
+        <h2>It’s tiny in production.</h2>
+        <p style="
+                font-size: 1.2em;
+                line-height: 1.5;
+                color: rgb(107, 114, 128);">
+            Your CSS is instantly ready for production,
+            and there is no CSS bundle at all.
+            In fact, all Inline CSS projects ship
+            exactly 0KB of external CSS to the client.
+        </p>
+        <a style="
+            font-size: 1.2em;
+            text-decoration: none;
+            color: #14b8a6;" href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+            Learn more →
+        </a>
+    </section>
+
+    <section style="
+        max-width: 40em;
+        margin: 4em 0">
+        <h2>Responsive everything.</h2>
+        <p style="
+                font-size: 1.2em;
+                line-height: 1.5;
+                color: rgb(107, 114, 128);">
+            Wrestling with a bunch of complex media queries in your CSS sucks,
+            so just don’t write them. Let the browser handle everything.
+        </p>
+        <a style="
+            font-size: 1.2em;
+            text-decoration: none;
+            color: #7c3aed;" href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+            Learn more →
+        </a>
+    </section>
+
+    <section style="
+        position: absolute;
+        left: 0; right: 0;
+        padding: 4em 4em 8em;
+        text-align: center;
+        background-color: rgb(249, 250, 251);">
+        <h2>
+            <a style="
+            text-decoration: none;
+            color: #16a34a;" href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+                Get started
+            </a> with Inline CSS
+        </h2>
+        <p>opportunities are ∞</p>
+    </section>
+</body>
+
+</html>
